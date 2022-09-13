@@ -10,7 +10,7 @@ The end-product of our project will be a desktop application which will provide 
 
 ## Protoype GUI
 
-[Initial Screenshot of GUI](protoss.png)
+![Initial Screenshot of GUI](protoss.png)
 
 Created as BTech Semester Long Project for Sem-7
 
