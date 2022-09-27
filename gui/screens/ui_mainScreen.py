@@ -16,19 +16,20 @@ class Ui_mainWindow(object):
         mainWindow.setObjectName("mainWindow")
         mainWindow.setEnabled(True)
         mainWindow.resize(1095, 712)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(1)
         sizePolicy.setHeightForWidth(mainWindow.sizePolicy().hasHeightForWidth())
         mainWindow.setSizePolicy(sizePolicy)
         mainWindow.setAutoFillBackground(False)
-        mainWindow.setStyleSheet("background: rgb(43, 46, 59);\n"
-"")
+        mainWindow.setStyleSheet("background: rgb(43, 46, 59);\n" "")
         self.landing = QtWidgets.QWidget(mainWindow)
         self.landing.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
-        self.landing.setStyleSheet("QWidget#landing{\n"
-"background: rgb(43, 46, 59);\n"
-"}")
+        self.landing.setStyleSheet(
+            "QWidget#landing{\n" "background: rgb(43, 46, 59);\n" "}"
+        )
         self.landing.setObjectName("landing")
         self.gridLayout = QtWidgets.QGridLayout(self.landing)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
@@ -39,7 +40,9 @@ class Ui_mainWindow(object):
         self.frame_2.setObjectName("frame_2")
         self.gridLayout.addWidget(self.frame_2, 0, 0, 1, 1)
         self.frame = QtWidgets.QFrame(self.landing)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(1)
         sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
@@ -53,42 +56,10 @@ class Ui_mainWindow(object):
         self.gridLayout_2.setContentsMargins(50, 50, 50, 50)
         self.gridLayout_2.setSpacing(20)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.frame_3 = QtWidgets.QFrame(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(1)
-        sizePolicy.setVerticalStretch(3)
-        sizePolicy.setHeightForWidth(self.frame_3.sizePolicy().hasHeightForWidth())
-        self.frame_3.setSizePolicy(sizePolicy)
-        self.frame_3.setMinimumSize(QtCore.QSize(0, 242))
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.pushButton = QtWidgets.QPushButton(self.frame_3)
-        self.pushButton.setGeometry(QtCore.QRect(0, 170, 291, 71))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy)
-        self.pushButton.setStyleSheet(":enabled {\n"
-"border-radius: 0px;\n"
-"font-family: Courier New;\n"
-"color: #ffffff;\n"
-"font-size: 14pt;\n"
-"background: transparent;\n"
-"padding: 10pt 20pt 10pt 20pt;\n"
-"border: 5px solid #ffffff;\n"
-"text-decoration: none;\n"
-"}\n"
-":hover {\n"
-"background: white;\n"
-"color: rgb(43, 46, 59);\n"
-"border: 0px;\n"
-"}")
-        self.pushButton.setObjectName("pushButton")
-        self.gridLayout_2.addWidget(self.frame_3, 3, 0, 1, 1)
         self.label = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(1)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
@@ -100,22 +71,80 @@ class Ui_mainWindow(object):
         font.setItalic(False)
         font.setWeight(50)
         self.label.setFont(font)
-        self.label.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";\n"
-"color: rgb(158,233,248);")
+        self.label.setStyleSheet(
+            'font: 36pt "MS Shell Dlg 2";\n' "color: rgb(158,233,248);"
+        )
         self.label.setObjectName("label")
         self.gridLayout_2.addWidget(self.label, 1, 0, 1, 1)
+        self.frame_3 = QtWidgets.QFrame(self.frame)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
+        sizePolicy.setHorizontalStretch(1)
+        sizePolicy.setVerticalStretch(3)
+        sizePolicy.setHeightForWidth(self.frame_3.sizePolicy().hasHeightForWidth())
+        self.frame_3.setSizePolicy(sizePolicy)
+        self.frame_3.setMinimumSize(QtCore.QSize(0, 240))
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.gridLayout_2.addWidget(self.frame_3, 3, 0, 1, 1)
         self.label_2 = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(1)
         sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
         self.label_2.setSizePolicy(sizePolicy)
-        self.label_2.setStyleSheet("font: 20pt \"MS Reference Sans Serif\";\n"
-"color: white;")
+        self.label_2.setStyleSheet(
+            'font: 20pt "MS Reference Sans Serif";\n' "color: white;"
+        )
         self.label_2.setObjectName("label_2")
         self.gridLayout_2.addWidget(self.label_2, 2, 0, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(20, 60, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.MinimumExpanding)
+        spacerItem = QtWidgets.QSpacerItem(
+            20,
+            60,
+            QtWidgets.QSizePolicy.Minimum,
+            QtWidgets.QSizePolicy.MinimumExpanding,
+        )
         self.gridLayout_2.addItem(spacerItem, 0, 0, 1, 1)
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
+        self.pushButton.setSizePolicy(sizePolicy)
+        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton.setMinimumSize(QtCore.QSize(300, 60))
+        self.pushButton.setBaseSize(QtCore.QSize(100, 100))
+        self.pushButton.setStyleSheet(
+            ":enabled {\n"
+            "border-radius: 0px;\n"
+            "font-family: Courier New;\n"
+            "color: #ffffff;\n"
+            "font-size: 14pt;\n"
+            "background: transparent;\n"
+            "padding: 10pt 20pt 10pt 20pt;\n"
+            "border: 5px solid #ffffff;\n"
+            "text-decoration: none;\n"
+            "}\n"
+            ":hover {\n"
+            "background: white;\n"
+            "color: rgb(43, 46, 59);\n"
+            "border: 0px;\n"
+            "}"
+        )
+        self.pushButton.setDefault(False)
+        self.pushButton.setFlat(False)
+        self.pushButton.setObjectName("pushButton")
+        self.gridLayout_2.addWidget(self.pushButton, 4, 0, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
+        self.gridLayout_2.addItem(spacerItem1, 5, 0, 1, 1)
         self.gridLayout.addWidget(self.frame, 1, 0, 1, 1)
         mainWindow.setCentralWidget(self.landing)
 
@@ -125,6 +154,10 @@ class Ui_mainWindow(object):
     def retranslateUi(self, mainWindow):
         _translate = QtCore.QCoreApplication.translate
         mainWindow.setWindowTitle(_translate("mainWindow", "MainWindow"))
+        self.label.setText(
+            _translate("mainWindow", "Suspicious Human Activity Detection")
+        )
+        self.label_2.setText(
+            _translate("mainWindow", "A prototype UI design for our software")
+        )
         self.pushButton.setText(_translate("mainWindow", "Select a video"))
-        self.label.setText(_translate("mainWindow", "Suspicious Human Activity Detection"))
-        self.label_2.setText(_translate("mainWindow", "A prototype UI design for our software"))
